@@ -41,7 +41,7 @@
       <div class="form-group row">
           <label class="col-lg-4 text-lg-right" for="pilots_id[]"><h4>Pilots</h4></label>
           <div class="col-lg-6">
-            <select class="form-control" id="pilots_id[]" name="pilots_id[]">
+            <select class="form-control" id="pilots_id[]" name="pilots_id[]" required multiple>
               @foreach ($pilots as $pilot)
                 <option value="{{ $pilot -> id }}">
                   {{ $pilot -> firstname }}
