@@ -11,11 +11,12 @@
         @foreach ($pilot -> cars as $car)
           <li class='li_border'>
                {{ $car -> name }}
-               -
+               -> Model :
                {{ $car -> model }}
-               :
+               <br>kW
                {{ $car -> kW }}
                <br>
+               Brand
                {{ $car -> brand -> name }}
           </li>
         @endforeach

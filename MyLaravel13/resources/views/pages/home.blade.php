@@ -12,9 +12,9 @@
              {{ $car -> kW }}
              <br>
              {{ $car -> brand -> name }}
-           <h4>Pilot:</h4>
            @foreach ($car -> pilots as $pilot)
              <li>
+               <span>Pilot:</span>
                <a href="{{ route('pilot', $pilot -> id) }}">
                  {{ $pilot -> firstname }}
                  -
